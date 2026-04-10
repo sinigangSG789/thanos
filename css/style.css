@@ -12,11 +12,44 @@ html, body{
     padding: 0;
 }
 
+p, ul, ol{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+ul, ol{
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+p.caption{
+    font-size: 12;
+    font-style: italic;
+    margin-block-start: 0;
+}
+
+a{
+    color: rgb(176, 149, 202);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(160, 109, 207);
+}
+
+a:active{
+    color: white;
+}
+
 header{
     text-align: center;
     background-color: rgb(73, 37, 73);
     padding: 20px;
-
+    background-image: url('../img/titan3.jpg');
+    background-repeat: no-repeat;
+    background-position: center -947px;
+    background-size: cover;
 }
 
 header .pfp{
@@ -31,13 +64,30 @@ header .pfp{
    margin: 0 auto;
 }
 
-header h1{
+h1{
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   font-style: normal;
   font-size: 40px;
+  letter-spacing: 2px;
   margin: 10px 0;
   color: aliceblue;
+}
+
+h2{
+  font-family: "Poppins", sans-serif;  
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  margin: 20px 0;
+}
 
 
+main{
+    width: 800px;
+    margin: 0 auto;
+}
+
+main img{
+    max-width: 100%;
 }
