@@ -44,11 +44,10 @@ a:active{
 
 header{
     text-align: center;
-    background-color: rgb(73, 37, 73);
     padding: 20px;
     background-image: url('../img/titan3.jpg');
     background-repeat: no-repeat;
-    background-position: center -947px;
+    background-position: center 70%; 
     background-size: cover;
 }
 
@@ -84,10 +83,54 @@ h2{
 
 
 main{
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 main img{
     max-width: 100%;
 }
+
+/* footer */
+footer{
+    color: azure;
+    background-color:rgb(27, 27, 27);
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px;
+
+}
+
+footer .content{
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+@media (max-width: 600px){
+
+    footer p {
+        font-size: 10px;
+    }
+
+    h2{
+        font-size: 20px;  
+        text-align: center;
+    }
+
+    p, ul, ol {
+        font-size: 15px;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    header .pfp {
+    width: 230px;
+    height: 230px;
+    background-position: -59px center;
+    }
+}
+
