@@ -6,6 +6,14 @@ body {
     background-color:rgb(68, 68, 68);
 }
 
+body.ebony{
+    background-color: black;
+}
+
+body.ebony{
+    color: white;
+}
+
 html, body{
 
     margin: 0;
@@ -51,6 +59,16 @@ header{
     background-size: cover;
 }
 
+header#ebony{
+    background-image: url('../img/sanctuary.jpg');
+    background-repeat: no-repeat;
+    background-position: center 70%; 
+    background-size: cover;
+}
+
+
+
+
 header .pfp{
     width: 300px;
     height: 300px;
@@ -61,6 +79,13 @@ header .pfp{
     background-position: -77px center;
     background-size: 136%;
    margin: 0 auto;
+}
+
+header .pfp.Ebony{
+    background-image: url('../img/ebonymawpfp.webp');
+    background-repeat: no-repeat;
+    background-position: -82px center;
+    border: 15px solid white;
 }
 
 h1{
@@ -90,6 +115,7 @@ main{
 
 main img{
     max-width: 100%;
+    border-radius: 10px;
 }
 
 /* footer */
