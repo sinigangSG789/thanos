@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background-color:rgb(68, 68, 68);
+}
+
+body.ebony{
+    background-color: black;
+}
+
+body.ebony{
+    color: white;
+}
+
+html, body{
+
+    margin: 0;
+    padding: 0;
+}
+
+p, ul, ol{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+ul, ol{
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+p.caption{
+    font-size: 12;
+    font-style: italic;
+    margin-block-start: 0;
+}
+
+a{
+    color: rgb(176, 149, 202);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(160, 109, 207);
+}
+
+a:active{
+    color: white;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    background-image: url('../img/titan3.jpg');
+    background-repeat: no-repeat;
+    background-position: center 70%; 
+    background-size: cover;
+}
+
+header#ebony{
+    background-image: url('../img/sanctuary.jpg');
+    background-repeat: no-repeat;
+    background-position: center 70%; 
+    background-size: cover;
+}
+
+
+
+
+header .pfp{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 15px solid wheat ;
+    background-image: url('../img/thanosprofilepic.png');
+    background-repeat: no-repeat;
+    background-position: -77px center;
+    background-size: 136%;
+   margin: 0 auto;
+}
+
+header .pfp.Ebony{
+    background-image: url('../img/ebonymawpfp.webp');
+    background-repeat: no-repeat;
+    background-position: -82px center;
+    border: 15px solid white;
+}
+
+h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  color: aliceblue;
+}
+
+h2{
+  font-family: "Poppins", sans-serif;  
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* footer */
+footer{
+    color: azure;
+    background-color:rgb(27, 27, 27);
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px;
+
+}
+
+footer .content{
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+@media (max-width: 600px){
+
+    footer p {
+        font-size: 10px;
+    }
+
+    h2{
+        font-size: 20px;  
+        text-align: center;
+    }
+
+    p, ul, ol {
+        font-size: 15px;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    header .pfp {
+    width: 230px;
+    height: 230px;
+    background-position: -59px center;
+    }
+}
+
