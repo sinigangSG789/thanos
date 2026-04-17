@@ -50,7 +50,9 @@ a:active{
     color: white;
 }
 
-header{
+.hero-section{
+    width: 100vw;
+    height: 500px;
     text-align: center;
     padding: 20px;
     background-image: url('../img/titan3.jpg');
@@ -69,7 +71,7 @@ header#ebony{
 
 
 
-header .pfp{
+.hero-section .pfp{
     width: 300px;
     height: 300px;
     border-radius: 50%;
