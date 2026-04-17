@@ -4,10 +4,21 @@
 
 body {
     background-color:rgb(68, 68, 68);
+    background-image: url('../img/titan.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
 }
 
-body.ebony{
-    background-color: black;
+.ebony{
+     background-image: url('../img/sanctuary.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
 }
 
 body.ebony{
@@ -18,6 +29,30 @@ html, body{
 
     margin: 0;
     padding: 0;
+}
+
+h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  color: aliceblue;
+}
+
+h2{
+  font-family: "Poppins", sans-serif;  
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.507);
+  padding: 9px 0;
+}
+
+h3, p {
+    padding: 0 1em;
 }
 
 /* Nav */
@@ -84,13 +119,14 @@ li.menu-button{
     right: 0; /* or left: 0; */
     width: 250px;
     height: 100vh;
-    background-color: rgba(17, 17, 17, 0.432);
+    background-color: rgba(0, 0, 0, 0.432);
     backdrop-filter: blur(10px);
     padding: 20px;
     z-index: 999;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
+    box-shadow: rgba(0, 0, 0, 0.19) 20px 10px 0px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 li.button{
@@ -127,12 +163,20 @@ p, ul, ol{
 ul, ol{
     list-style-position: inside;
     padding-left: 0;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+}
+ul{
+    list-style: none;
+    text-align: center;
 }
 
 p.caption{
     font-size: 12;
     font-style: italic;
     margin-block-start: 0;
+    text-align: center;
 }
 
 a{
@@ -157,7 +201,9 @@ a:active{
     background-size: cover;
 }
 
-header#ebony{
+.hero-ebony{
+    padding: 20px;
+    text-align: center;
     background-image: url('../img/sanctuary.jpg');
     background-repeat: no-repeat;
     background-position: center 70%; 
@@ -171,49 +217,64 @@ header#ebony{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: 15px solid wheat ;
+    border: 10px solid white ;
     background-image: url('../img/thanosprofilepic.png');
     background-repeat: no-repeat;
     background-position: -77px center;
     background-size: 136%;
    margin: 0 auto;
+   transition: all 0.5s ease;
 }
 
-header .pfp.Ebony{
+.hero-section .pfp:hover{
+    background-size: 160%;
+    background-position: -110px -5px;
+    filter: saturate(4);
+    filter: brightness(3);
+}
+
+.pfp.Ebony{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid white ;
     background-image: url('../img/ebonymawpfp.webp');
     background-repeat: no-repeat;
-    background-position: -82px center;
-    border: 15px solid white;
+    background-position: -77px center;
+    background-size: 136%;
+   margin: 0 auto;
+   transition: all 0.8s ease;
+   
 }
 
-h1{
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 40px;
-  letter-spacing: 2px;
-  margin: 10px 0;
-  color: aliceblue;
+.pfp.Ebony:hover{
+    background-size: 170%;
+    background-position: -150px -100px;
+    filter: brightness(5);
+    filter:contrast(2)
 }
 
-h2{
-  font-family: "Poppins", sans-serif;  
-  font-weight: 600;
-  font-style: normal;
-  font-size: 30px;
-  margin: 20px 0;
-}
+
 
 
 main{
     max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: 1em auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 main img{
-    max-width: 100%;
+    max-width: 95%;
     border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+.profile{
+    padding: 2em 0;
 }
 
 /* footer */
