@@ -165,7 +165,7 @@ p, ul, ol{
     line-height: 24px;
 }
 
-ul, ol{
+ul{
     list-style-position: outside;
     padding-left: 0;
     width: fit-content;
@@ -365,7 +365,7 @@ td.row {
 
 
 td {
-  border: 1px solid #beb9b9;
+  border: 1px solid #8b4b4b;
   padding: 10px;
   text-align: center;
   height: 2em;
