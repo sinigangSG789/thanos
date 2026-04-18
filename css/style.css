@@ -4,7 +4,7 @@
 
 body {
     background-color:rgb(68, 68, 68);
-    background-image: url('../img/titan.webp');
+    background-image: url('../img/thanos_bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -82,6 +82,7 @@ nav a{
 nav ul {
     height: 100%;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
     gap: 5em;
@@ -126,6 +127,7 @@ li.menu-button{
     z-index: 999;
     display: none;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
     box-shadow: rgba(0, 0, 0, 0.19) 20px 10px 0px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
@@ -196,10 +198,11 @@ a:active{
 .hero-section{
     text-align: center;
     padding: 20px;
-    background-image: url('../img/titan3.jpg');
+    background-image: url(../img/titan3.jpg);
     background-repeat: no-repeat;
-    background-position: center 70%; 
+    background-position: center -731px;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .hero-ebony{
@@ -381,7 +384,7 @@ footer .content{
     background-position: -10px -10px;
     }
 
-    header .pfp {
+   .pfp {
     width: 230px;
     height: 230px;
     background-position: -59px center;
