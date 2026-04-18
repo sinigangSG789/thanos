@@ -45,12 +45,12 @@ h2{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 30px;
+    font-size: 1.5em;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.507);
     margin: 0;
     line-height: 1;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 h3, p {
@@ -334,23 +334,35 @@ main img{
     display: flex;
     width: 100%;
     gap: 4px;
+    flex: .5;
+}
+
+.characteristics{
+    flex: 1;
+}
+
+.army{
+    flex: 1;
 }
 
 
 .table{
-flex: 1;    
+flex: auto;    
 }
 
 table {
+    font-family: sans-serif;
     border-collapse: collapse;
-    width: 87%;
-    margin: 20px auto;
-    height: fit-content;
+    width: 96%;
+    margin: 0 auto;
+    height: 87%;
 }
-
 td.row {
     width: 30%;
+     font-weight: bold;
+   
 }
+
 
 td {
   border: 1px solid #beb9b9;
@@ -379,7 +391,7 @@ footer .content{
 
 }
 
-@media (max-width: 900px){
+@media (max-width: 1200px){
 
    main{
     display: flex;
@@ -430,7 +442,20 @@ footer .content{
     justify-self: flex-end;
     margin: 0;
     padding: 0;
-}
+    }
+    .characteristics{
+        flex: 1;
+    }
+    .army{
+        flex: 1;
+    }
+    table{
+        width: 75%;
+    }
+
+    .list{
+    flex-flow: column;
+    }
  footer p {
         font-size: 10px;
     }
