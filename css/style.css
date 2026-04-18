@@ -49,6 +49,8 @@ h2{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.507);
     margin: 0;
+    line-height: 1;
+    padding: 10px 0;
 }
 
 h3, p {
@@ -166,7 +168,7 @@ p, ul, ol{
 ul, ol{
     list-style-position: outside;
     padding-left: 0;
-    width: 70%;
+    width: fit-content;
     margin: 0 auto;
     padding: 20px;
 }
@@ -218,7 +220,7 @@ a:active{
 
 
 
-.hero-section .pfp{
+.pfp-thanos{
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -231,7 +233,7 @@ a:active{
    /* transition: all 0.2s ease; */
 }
 
-.hero-section .pfp:hover{
+.pfp-thanos:hover{
     background-image: url(../img/thanos-gif.gif);
     background-position: -10px -10px;
     /* background-size: 160%;
@@ -240,7 +242,7 @@ a:active{
     filter: brightness(3); */
 }
 
-.pfp.Ebony{
+.pfp-ebony{
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -254,7 +256,7 @@ a:active{
    
 }
 
-.pfp.Ebony:hover{
+.pfp-ebony:hover{
     background-image: url(../img/ebonymaw.gif);
     background-size: cover;
     background-position: -150px 0px;
@@ -315,29 +317,51 @@ main img{
 
 .profile {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-.about, .characteristics, .army{
+.about, .characteristics, .army, .table{
     background-color: #000000a1;
     border-radius: 30px;
     backdrop-filter: blur(10px);
     overflow: hidden;
-
-}
-
-.characteristics {
     margin: 10px;
-    padding: 10px 0;
+
 }
 
-.army {
-    margin: 10px;
-    padding: 10px 0;
-    background-color: #0000004f;
-    backdrop-filter: blur(10px);
-    BORDER-RADIUS: 30PX;
-    overflow: hidden;
+.list{
+    display: flex;
+    width: 100%;
+    gap: 4px;
 }
+
+
+.table{
+flex: 1;    
+}
+
+table {
+    border-collapse: collapse;
+    width: 87%;
+    margin: 20px auto;
+    height: fit-content;
+}
+
+td.row {
+    width: 30%;
+}
+
+td {
+  border: 1px solid #beb9b9;
+  padding: 10px;
+  text-align: center;
+  height: 2em;
+}
+
+
+
+
 
 /* footer */
 footer{
@@ -379,7 +403,7 @@ footer .content{
         text-align: center;
     }
 
-    .hero-section .pfp{
+     .pfp-thanos{
     background-image: url(../img/thanos-gif.gif);
     background-position: -10px -10px;
     }
@@ -390,7 +414,7 @@ footer .content{
     background-position: -59px center;
     }
 
-    .pfp.Ebony{
+    .pfp-ebony{
     background-image: url(../img/ebonymaw.gif);
     background-size: cover;
     background-position: -150px 0px;
