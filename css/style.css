@@ -431,6 +431,13 @@ footer .content{
     background-size: cover;
     background-position: -150px 0px;
     }
+
+    .pfp-proxima{
+    background-image: url(../img/proxima.gif);
+    background-size: cover;
+    background-position: -180px 0px;
+}
+
     
 
     .HideOnMobile{
