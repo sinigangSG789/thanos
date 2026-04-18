@@ -12,8 +12,8 @@ body {
     color: white;
 }
 
-.ebony{
-     background-image: url('../img/sanctuary.jpg');
+.ebony, .proxima{
+     background-image: url('../img/armybg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -42,17 +42,18 @@ h1{
 }
 
 h2{
-  font-family: "Poppins", sans-serif;  
-  font-weight: 600;
-  font-style: normal;
-  font-size: 30px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.507);
-  padding: 9px 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.507);
+    margin: 0;
 }
 
 h3, p {
-    padding: 0 1em;
+    max-width: 80%;
+    margin: 10px auto;
 }
 
 /* Nav */
@@ -161,9 +162,9 @@ p, ul, ol{
 }
 
 ul, ol{
-    list-style-position: inside;
+    list-style-position: outside;
     padding-left: 0;
-    width: fit-content;
+    width: 70%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -206,8 +207,9 @@ a:active{
     text-align: center;
     background-image: url('../img/sanctuary.jpg');
     background-repeat: no-repeat;
-    background-position: center 70%; 
+    background-position: center -60px;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -223,14 +225,16 @@ a:active{
     background-position: -77px center;
     background-size: 136%;
    margin: 0 auto;
-   transition: all 0.5s ease;
+   /* transition: all 0.2s ease; */
 }
 
 .hero-section .pfp:hover{
-    background-size: 160%;
+    background-image: url(../img/thanos-gif.gif);
+    background-position: -10px -10px;
+    /* background-size: 160%;
     background-position: -110px -5px;
     filter: saturate(4);
-    filter: brightness(3);
+    filter: brightness(3); */
 }
 
 .pfp.Ebony{
@@ -238,32 +242,53 @@ a:active{
     height: 300px;
     border-radius: 50%;
     border: 10px solid white ;
-    background-image: url('../img/ebonymawpfp.webp');
+    background-image: url('../img/Ebony_Maw_profile2.webp');
     background-repeat: no-repeat;
     background-position: -77px center;
-    background-size: 136%;
+    background-size: cover;
    margin: 0 auto;
-   transition: all 0.8s ease;
+   transition: all 0.2s ease;
    
 }
 
 .pfp.Ebony:hover{
-    background-size: 170%;
+    background-image: url(../img/ebonymaw.gif);
+    background-size: cover;
+    background-position: -150px 0px;
+    /* background-size: 170%;
     background-position: -150px -100px;
     filter: brightness(5);
-    filter:contrast(2)
+    filter:contrast(2) */
+}
+
+.pfp-proxima{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid white ;
+    background-image: url('../img/proximapfp.jpg');
+    background-repeat: no-repeat;
+    background-position: -180px center;
+    background-size: cover;
+   margin: 0 auto;
+
+}
+
+.pfp-proxima:hover{
+    background-image: url(../img/proxima.gif);
+    background-size: cover;
+    background-position: -180px 0px;
 }
 
 
 
-
 main{
-    max-width: 800px;
+    width: 70vw;
     margin: 1em auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
     border-radius: 20px;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main img{
@@ -273,8 +298,42 @@ main img{
     display: block;
 }
 
-.profile{
-    padding: 2em 0;
+.about{
+    flex: 1.5;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.about p {
+    max-width: 80%;
+    margin: 10px auto;
+}
+
+
+.profile {
+    flex: 1;
+}
+
+.about, .characteristics, .army{
+    background-color: #000000a1;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+
+}
+
+.characteristics {
+    margin: 10px;
+    padding: 10px 0;
+}
+
+.army {
+    margin: 10px;
+    padding: 10px 0;
+    background-color: #0000004f;
+    backdrop-filter: blur(10px);
+    BORDER-RADIUS: 30PX;
+    overflow: hidden;
 }
 
 /* footer */
@@ -293,15 +352,20 @@ footer .content{
 
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
 
-    footer p {
-        font-size: 10px;
-    }
+   main{
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+   }
 
     h2{
-        font-size: 20px;  
+        font-size: 2em;  
         text-align: center;
+    }
+    h3{
+       text-align: center; 
     }
 
     p, ul, ol {
@@ -312,11 +376,23 @@ footer .content{
         text-align: center;
     }
 
+    .hero-section .pfp{
+    background-image: url(../img/thanos-gif.gif);
+    background-position: -10px -10px;
+    }
+
     header .pfp {
     width: 230px;
     height: 230px;
     background-position: -59px center;
     }
+
+    .pfp.Ebony{
+    background-image: url(../img/ebonymaw.gif);
+    background-size: cover;
+    background-position: -150px 0px;
+    }
+    
 
     .HideOnMobile{
         display: none;
@@ -328,5 +404,8 @@ footer .content{
     margin: 0;
     padding: 0;
 }
+ footer p {
+        font-size: 10px;
+    }
 }
 
